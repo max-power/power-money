@@ -1,0 +1,3 @@
+<data class="money" value="<%= amount.to_s('F') %>" data-currency="<%= currency_code %>">
+  <span class="sign"><%= ('-' if sign < 0) %></span><span class="fix"><%= fix.to_i %></span><span class="frac"><%= frac.to_s('F')[1..-1] %></span><%= NNBSP %><span class="currency"><%= currency_code %></span>
+</data>

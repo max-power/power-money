@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title></title>
+  <style>
+    body {
+      font-family: system-ui;
+    }
+    .money {
+      font-variant-numeric: tabular-nums;
+      font-size: 2rem;
+
+      .fix {
+        font-weight: 700;
+      }
+
+      .frac {
+        font-weight: 300;
+        font-size: 1rem;
+        vertical-align: super;
+/*        border-bottom: 2px solid currentColor;*/
+      }
+
+      .sign,
+      .currency {
+        color: #888;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+  
+  <data class="money" value="112421.99" data-currency="EUR">
+    <span class="sign"></span><span class="fix">112421</span><span class="frac">.99</span> <span class="currency">EUR</span>
+  </data>
+  
+</body>
+</html>
