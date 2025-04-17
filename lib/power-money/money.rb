@@ -20,7 +20,7 @@ Money = Data.define(:amount, :currency) do
     end
   
     def method_missing(method_name, *args, &block)
-      if args.size == 1 && args.first.is_a?(Numeric) && Currency.exists?(method_name)
+      if args.size == 1 && Currency.exists?(method_name)
         new(args.first, method_name)
       else
         super
@@ -28,7 +28,7 @@ Money = Data.define(:amount, :currency) do
     end
   
     def respond_to_missing?(method_name, include_private = false)
-      method_name.size == 3 && Currency.exists?(method_name) || super
+      Currency.exists?(method_name) || super
     end
   end
   

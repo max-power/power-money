@@ -38,6 +38,7 @@ class Currency < Struct.new(
     end
     
     def exists?(code)
+      return false if code.size != 3
       !!find(code)
     end
     
