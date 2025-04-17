@@ -37,6 +37,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "i18n", "~> 1.14"
   spec.add_dependency "bigdecimal"
   spec.add_dependency "nokogiri"
+  spec.add_dependency "tldr"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html

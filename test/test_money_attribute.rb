@@ -2,7 +2,7 @@
 
 require "test_helper"
 
-class TestMoneyAttribute < Minitest::Test
+class TestMoneyAttribute < TLDR
   
   class Product
     extend MoneyAttribute

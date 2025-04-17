@@ -4,9 +4,9 @@ require "test_helper"
 
 # ATTENTION: The space between amount and currency is a NARROW NO-BREAK SPACE!
 
-class TestMoney < Minitest::Test
+class TestMoney < TLDR
   def test_that_it_has_a_version_number
-    refute_nil ::Money::VERSION
+    refute_nil Money::VERSION
   end
   
   ###########################################################################  
@@ -83,8 +83,9 @@ class TestMoney < Minitest::Test
     assert Money.new(10, "EUR") > Money.new(1, "EUR")
   end
   
-  def test_comparable
+  def test_comparable_eql
     assert Money.new(10, "DKK").eql? Money.new(10, "DKK")
+    assert Money.zero("SEK").eql? Money.zero("DKK")
     refute Money.new(10, "DKK").eql? Money.new(10, "SEK")
   end
   

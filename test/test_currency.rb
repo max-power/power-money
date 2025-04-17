@@ -2,7 +2,7 @@
 
 require "test_helper"
 
-class TestCurrency < Minitest::Test
+class TestCurrency < TLDR
   def test_load_all_currencies
     assert_equal 194, Currency.all.count
   end
