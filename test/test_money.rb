@@ -5,10 +5,6 @@ require "test_helper"
 # ATTENTION: The space between amount and currency is a NARROW NO-BREAK SPACE!
 
 class TestMoney < TLDR
-  def test_that_it_has_a_version_number
-    refute_nil Money::VERSION
-  end
-  
   ###########################################################################  
   # Initializable
   

@@ -1,16 +1,14 @@
 # frozen_string_literal: true
 
-require_relative "lib/power-money/version"
-
 Gem::Specification.new do |spec|
   spec.name = "power-money"
-  spec.version = Money::VERSION
+  spec.version = "0.1.0"
   spec.authors = ["Max Power"]
   spec.email = ["kevin.melchert@gmail.com"]
 
   spec.summary = "A Ruby Library for dealing with money and currencies."
   spec.description = "A Ruby Library for dealing with money and currencies."
-  spec.homepage = ""
+  spec.homepage = "https://github.com/max-power/power-money"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
 
