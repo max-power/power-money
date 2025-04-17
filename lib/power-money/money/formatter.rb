@@ -9,7 +9,7 @@ class Money::Formatter
   
   extend Forwardable
   
-  def_delegators :@currency, :precision, :thousands_separator, :decimal_mark, 
+  def_delegators :@currency, :thousands_separator, :decimal_mark, #:precision, 
                              :iso_code, :symbol, :disambiguate_symbol, 
                              :alternate_symbols, :html_entity, :symbol_first
 
