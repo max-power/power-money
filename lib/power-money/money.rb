@@ -189,9 +189,11 @@ Money = Data.define(:amount, :currency) do
   def ==(other)
     (other.is_a?(Money) && zero? && other.zero?) ? true : super
   end
+  alias :eql? :==
   
   def <=>(other)
     return nil unless other.is_a?(Money)
+    return 0 if zero? && other.zero?
     return nil unless currency == other.currency
     amount <=> other.amount
   end
