@@ -38,7 +38,7 @@ class Money::Splitter
       weights
     when Integer
       raise ArgumentError, "Number of parts must be at least 1" if weights < 1
-      raise ArgumentError, "Cannot split #{@cents} cents into #{parts} parts" if weights > @cents.abs
+      raise ArgumentError, "Cannot split #{@cents} cents into #{weights} parts" if weights > @cents.abs
       Array.new(weights, 1)
     else
       raise ArgumentError, "Weights must be a positive number or an array of positive numbers"
