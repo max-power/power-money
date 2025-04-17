@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "test_helper"
+#require "test_helper"
 
 # ATTENTION: The space between amount and currency is a NARROW NO-BREAK SPACE!
 
